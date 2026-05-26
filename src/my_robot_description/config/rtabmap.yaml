@@ -1,0 +1,35 @@
+rtabmap:
+  ros__parameters:
+    use_sim_time: true
+
+    # ── Frames ──────────────────────────────────────────
+    frame_id: base_footprint
+    odom_frame_id: odom
+    map_frame_id: map
+
+    # ── Input Topics ────────────────────────────────────
+    rgb_topic: /camera/image_raw
+    depth_topic: /camera/depth/image_raw
+    camera_info_topic: /camera/camera_info
+    odom_topic: /odometry/filtered          # ← EKF Output!
+
+    # ── Output ──────────────────────────────────────────
+    publish_tf: false                        # ← SLAM Toolbox macht den TF
+    subscribe_depth: true
+    subscribe_rgb: true
+
+    # ── RTAB-Map Parameter ──────────────────────────────
+    Mem/IncrementalMemory: "true"
+    Mem/InitWMWithAllNodes: "false"
+
+    # Loop Closure
+    Rtabmap/DetectionRate: "1"              # Hz
+    Rtabmap/TimeThr: "0"
+
+    # Visual Odometry Qualität
+    Vis/MinInliers: "10"
+    Vis/MaxDepth: "10.0"
+
+    # Für 2D Roboter
+    Reg/Force3DoF: "true"                   # ← wichtig für Differential Drive!
+    Optimizer/GravitySigma: "0"

@@ -1,0 +1,228 @@
+[0.000000] (-) TimerEvent: {}
+[0.016080] (my_robot_description) JobQueued: {'identifier': 'my_robot_description', 'dependencies': OrderedDict()}
+[0.016459] (my_robot_description) JobStarted: {'identifier': 'my_robot_description'}
+[0.037084] (my_robot_description) JobProgress: {'identifier': 'my_robot_description', 'progress': 'cmake'}
+[0.037331] (my_robot_description) Command: {'cmd': ['/usr/bin/cmake', '/home/ghislain/m_robot_ws/src/my_robot_description', '-DCMAKE_INSTALL_PREFIX=/home/ghislain/m_robot_ws/install/my_robot_description'], 'cwd': '/home/ghislain/m_robot_ws/build/my_robot_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ghislain'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ghislain'), ('OLDPWD', '/home/ghislain/m_robot_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1501'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ghislain/m_robot_ws/install:/home/ghislain/robot_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ghislain'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ghislain'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ghislain:@/tmp/.ICE-unix/1471,unix/ghislain:/tmp/.ICE-unix/1471'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8b274c58_c1b7_4882_9a8c_124f9212b215'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4WL3N3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.115'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ghislain/m_robot_ws/install/my_robot_description:/home/ghislain/robot_ws/install/robot_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ghislain/m_robot_ws/build/my_robot_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ghislain/m_robot_ws/install/my_robot_description:/home/ghislain/robot_ws/install/robot_description:/opt/ros/humble')]), 'shell': False}
+[0.112231] (-) TimerEvent: {}
+[0.223956] (-) TimerEvent: {}
+[0.304837] (my_robot_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.325595] (-) TimerEvent: {}
+[0.426868] (-) TimerEvent: {}
+[0.529429] (-) TimerEvent: {}
+[0.565148] (my_robot_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.619931] (my_robot_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.632974] (-) TimerEvent: {}
+[0.735788] (-) TimerEvent: {}
+[0.839172] (-) TimerEvent: {}
+[0.940202] (-) TimerEvent: {}
+[1.021894] (my_robot_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.041311] (-) TimerEvent: {}
+[1.075790] (my_robot_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.078062] (my_robot_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.082933] (my_robot_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.111862] (my_robot_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.143441] (-) TimerEvent: {}
+[1.247311] (-) TimerEvent: {}
+[1.351751] (-) TimerEvent: {}
+[1.454478] (-) TimerEvent: {}
+[1.557804] (-) TimerEvent: {}
+[1.580279] (my_robot_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.619760] (my_robot_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.621594] (my_robot_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.623716] (my_robot_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.634959] (my_robot_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.658965] (-) TimerEvent: {}
+[1.761702] (-) TimerEvent: {}
+[1.863174] (-) TimerEvent: {}
+[1.964944] (-) TimerEvent: {}
+[2.028614] (my_robot_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.066179] (-) TimerEvent: {}
+[2.173749] (-) TimerEvent: {}
+[2.276286] (-) TimerEvent: {}
+[2.284278] (my_robot_description) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.373491] (my_robot_description) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.378609] (-) TimerEvent: {}
+[2.382275] (my_robot_description) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.400428] (my_robot_description) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.433901] (my_robot_description) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.473082] (my_robot_description) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.480177] (-) TimerEvent: {}
+[2.569269] (my_robot_description) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.576393] (my_robot_description) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.581472] (-) TimerEvent: {}
+[2.683187] (-) TimerEvent: {}
+[2.764027] (my_robot_description) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.784015] (-) TimerEvent: {}
+[2.821541] (my_robot_description) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.885967] (-) TimerEvent: {}
+[2.900593] (my_robot_description) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.920130] (my_robot_description) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.987091] (-) TimerEvent: {}
+[3.070966] (my_robot_description) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.072577] (my_robot_description) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.088375] (-) TimerEvent: {}
+[3.191061] (-) TimerEvent: {}
+[3.211488] (my_robot_description) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[3.215600] (my_robot_description) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.291565] (-) TimerEvent: {}
+[3.356626] (my_robot_description) StdoutLine: {'line': b'-- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)\n'}
+[3.392928] (-) TimerEvent: {}
+[3.413425] (my_robot_description) StdoutLine: {'line': b'-- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)\n'}
+[3.481224] (my_robot_description) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[3.490750] (my_robot_description) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[3.491834] (my_robot_description) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[3.495289] (-) TimerEvent: {}
+[3.598815] (-) TimerEvent: {}
+[3.700128] (-) TimerEvent: {}
+[3.774918] (my_robot_description) StdoutLine: {'line': b'-- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[3.794143] (my_robot_description) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[3.796866] (my_robot_description) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[3.801074] (-) TimerEvent: {}
+[3.823140] (my_robot_description) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[3.903518] (-) TimerEvent: {}
+[4.006683] (-) TimerEvent: {}
+[4.063785] (my_robot_description) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[4.107231] (-) TimerEvent: {}
+[4.176190] (my_robot_description) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[4.208080] (-) TimerEvent: {}
+[4.212401] (my_robot_description) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[4.274734] (my_robot_description) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[4.308887] (my_robot_description) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[4.309380] (-) TimerEvent: {}
+[4.316988] (my_robot_description) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[4.328363] (my_robot_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[4.331818] (my_robot_description) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[4.333197] (my_robot_description) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[4.352421] (my_robot_description) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[4.376021] (my_robot_description) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[4.411926] (-) TimerEvent: {}
+[4.453029] (my_robot_description) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[4.474106] (my_robot_description) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[4.495945] (my_robot_description) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[4.512735] (-) TimerEvent: {}
+[4.517451] (my_robot_description) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[4.518165] (my_robot_description) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[4.531817] (my_robot_description) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[4.532422] (my_robot_description) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[4.549852] (my_robot_description) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[4.550435] (my_robot_description) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[4.569234] (my_robot_description) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[4.569772] (my_robot_description) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[4.583425] (my_robot_description) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[4.584019] (my_robot_description) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[4.599810] (my_robot_description) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[4.614389] (-) TimerEvent: {}
+[4.718623] (-) TimerEvent: {}
+[4.825533] (-) TimerEvent: {}
+[4.927848] (-) TimerEvent: {}
+[5.030463] (-) TimerEvent: {}
+[5.132672] (-) TimerEvent: {}
+[5.198726] (my_robot_description) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[5.204356] (my_robot_description) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[5.207158] (my_robot_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[5.237104] (-) TimerEvent: {}
+[5.259513] (my_robot_description) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[5.297905] (my_robot_description) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[5.309378] (my_robot_description) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[5.337112] (my_robot_description) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[5.337476] (-) TimerEvent: {}
+[5.424686] (my_robot_description) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[5.437325] (my_robot_description) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[5.437716] (-) TimerEvent: {}
+[5.464458] (my_robot_description) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[5.539260] (-) TimerEvent: {}
+[5.545768] (my_robot_description) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[5.549210] (my_robot_description) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[5.550870] (my_robot_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[5.588906] (my_robot_description) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[5.604003] (my_robot_description) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[5.630195] (my_robot_description) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[5.639997] (-) TimerEvent: {}
+[5.716484] (my_robot_description) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[5.720871] (my_robot_description) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[5.721978] (my_robot_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[5.723651] (my_robot_description) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[5.725421] (my_robot_description) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[5.728570] (my_robot_description) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[5.742666] (-) TimerEvent: {}
+[5.751567] (my_robot_description) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[5.752930] (my_robot_description) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[5.756952] (my_robot_description) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[5.759167] (my_robot_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[5.760554] (my_robot_description) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[5.765024] (my_robot_description) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[5.766007] (my_robot_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[5.845217] (-) TimerEvent: {}
+[5.947671] (my_robot_description) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[5.948312] (-) TimerEvent: {}
+[5.963153] (my_robot_description) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[5.996884] (my_robot_description) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[6.051022] (-) TimerEvent: {}
+[6.071782] (my_robot_description) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[6.082704] (my_robot_description) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[6.114181] (my_robot_description) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[6.151747] (-) TimerEvent: {}
+[6.197372] (my_robot_description) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[6.199259] (my_robot_description) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[6.202859] (my_robot_description) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[6.204113] (my_robot_description) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[6.210210] (my_robot_description) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[6.211930] (my_robot_description) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[6.241830] (my_robot_description) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[6.253746] (-) TimerEvent: {}
+[6.327344] (my_robot_description) StdoutLine: {'line': b'-- Found gazebo_ros2_control: 0.4.10 (/opt/ros/humble/share/gazebo_ros2_control/cmake)\n'}
+[6.355199] (-) TimerEvent: {}
+[6.456333] (-) TimerEvent: {}
+[6.558570] (-) TimerEvent: {}
+[6.607558] (my_robot_description) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[6.659740] (-) TimerEvent: {}
+[6.756564] (my_robot_description) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[6.758211] (my_robot_description) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.760052] (my_robot_description) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[6.760701] (-) TimerEvent: {}
+[6.763845] (my_robot_description) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.766151] (my_robot_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.783104] (my_robot_description) StdoutLine: {'line': b'-- Generating done\n'}
+[6.793044] (my_robot_description) StdoutLine: {'line': b'-- Build files have been written to: /home/ghislain/m_robot_ws/build/my_robot_description\n'}
+[6.825669] (my_robot_description) CommandEnded: {'returncode': 0}
+[6.837042] (my_robot_description) JobProgress: {'identifier': 'my_robot_description', 'progress': 'build'}
+[6.839136] (my_robot_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ghislain/m_robot_ws/build/my_robot_description', '--', '-j4', '-l4'], 'cwd': '/home/ghislain/m_robot_ws/build/my_robot_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ghislain'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ghislain'), ('OLDPWD', '/home/ghislain/m_robot_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1501'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ghislain/m_robot_ws/install:/home/ghislain/robot_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ghislain'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ghislain'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ghislain:@/tmp/.ICE-unix/1471,unix/ghislain:/tmp/.ICE-unix/1471'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8b274c58_c1b7_4882_9a8c_124f9212b215'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4WL3N3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.115'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ghislain/m_robot_ws/install/my_robot_description:/home/ghislain/robot_ws/install/robot_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ghislain/m_robot_ws/build/my_robot_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ghislain/m_robot_ws/install/my_robot_description:/home/ghislain/robot_ws/install/robot_description:/opt/ros/humble')]), 'shell': False}
+[6.862730] (-) TimerEvent: {}
+[6.921778] (my_robot_description) CommandEnded: {'returncode': 0}
+[6.923957] (my_robot_description) JobProgress: {'identifier': 'my_robot_description', 'progress': 'install'}
+[6.946430] (my_robot_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ghislain/m_robot_ws/build/my_robot_description'], 'cwd': '/home/ghislain/m_robot_ws/build/my_robot_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ghislain'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ghislain'), ('OLDPWD', '/home/ghislain/m_robot_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1501'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ghislain/m_robot_ws/install:/home/ghislain/robot_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ghislain'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ghislain'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ghislain:@/tmp/.ICE-unix/1471,unix/ghislain:/tmp/.ICE-unix/1471'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8b274c58_c1b7_4882_9a8c_124f9212b215'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4WL3N3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.115'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ghislain/m_robot_ws/install/my_robot_description:/home/ghislain/robot_ws/install/robot_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ghislain/m_robot_ws/build/my_robot_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ghislain/m_robot_ws/install/my_robot_description:/home/ghislain/robot_ws/install/robot_description:/opt/ros/humble')]), 'shell': False}
+[6.960813] (my_robot_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.964094] (-) TimerEvent: {}
+[6.965266] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/my_robot_description/launch\n'}
+[6.968168] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/my_robot_description/launch/display.launch.py\n'}
+[6.968813] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/my_robot_description/launch/gazebo.launch.py\n'}
+[6.969992] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/my_robot_description/launch/ekf.launch.py\n'}
+[6.971759] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/my_robot_description/urdf\n'}
+[6.973231] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/my_robot_description/urdf/m_robot.xacro\n'}
+[6.974216] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/my_robot_description/config\n'}
+[6.975145] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/my_robot_description/config/ekf.yaml\n'}
+[6.975573] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/my_robot_description/config/controllers.yaml\n'}
+[6.976026] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/my_robot_description/rviz\n'}
+[6.976404] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/my_robot_description/rviz/robot.rviz\n'}
+[6.976773] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/my_robot_description/worlds\n'}
+[6.978254] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/my_robot_description/worlds/my_world.world\n'}
+[6.985824] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/my_robot_description/worlds/befehle.world\n'}
+[6.986617] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/ament_index/resource_index/package_run_dependencies/my_robot_description\n'}
+[6.989085] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/ament_index/resource_index/parent_prefix_path/my_robot_description\n'}
+[6.990104] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.sh\n'}
+[6.991831] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.dsv\n'}
+[6.992871] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/my_robot_description/environment/path.sh\n'}
+[6.993359] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/my_robot_description/environment/path.dsv\n'}
+[6.993784] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/my_robot_description/local_setup.bash\n'}
+[6.994202] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/my_robot_description/local_setup.sh\n'}
+[6.995272] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/my_robot_description/local_setup.zsh\n'}
+[6.995934] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/my_robot_description/local_setup.dsv\n'}
+[6.996625] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/my_robot_description/package.dsv\n'}
+[6.997394] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/ament_index/resource_index/packages/my_robot_description\n'}
+[6.997830] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig.cmake\n'}
+[6.999023] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig-version.cmake\n'}
+[6.999698] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/ghislain/m_robot_ws/install/my_robot_description/share/my_robot_description/package.xml\n'}
+[7.000364] (my_robot_description) CommandEnded: {'returncode': 0}
+[7.059865] (my_robot_description) JobEnded: {'identifier': 'my_robot_description', 'rc': 0}
+[7.064221] (-) TimerEvent: {}
+[7.064664] (-) EventReactorShutdown: {}

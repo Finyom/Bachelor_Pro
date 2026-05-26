@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+    <world name="default">
+
+        <!-- Include Ground Plane -->
+        <include>
+            <uri>model://ground_plane</uri>
+        </include>
+
+        <!-- Include Sun -->
+        <include>
+            <uri>model://sun</uri>
+        </include>
+        
+        <physics type="ode">
+            <real_time_update_rate>100</real_time_update_rate>    
+            <max_step_size>0.01</max_step_size>               
+            <real_time_factor>1</real_time_factor>
+        </physics>
+        
+        <!-- Obstacle 1 -->
+        <model name="obstacle_1">
+            <pose>1 1 0.5 0 0 0</pose>
+            <static>true</static>
+            <link name="link">
+                <visual name="visual">
+                    <geometry>
+                        <box>
+                            <size>0.5 0.5 1.0</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <ambient>1 0 0 1</ambient>
+                    </material>
+                </visual>
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>0.5 0.5 1.0</size>
+                        </box>
+                    </geometry>
+                </collision>
+            </link>
+        </model>
+
+        <model name="wall_front">
+            <pose>0 3 1 0 0 0</pose>
+            <static>true</static>
+            <link name="link">
+                <visual name="visual">
+                <geometry>
+                    <box>
+                    <size>6 0.1 2</size>
+                    </box>
+                </geometry>
+                <material>
+                    <ambient>1 1 0 0</ambient>
+                </material>
+                </visual>
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>6 0.1 2</size>
+                        </box>
+                    </geometry>
+                </collision>
+            </link>
+        </model>
+
+        <model name="wall_back">
+            <pose>0 -3 1 0 0 0</pose>
+            <static>true</static>
+            <link name="link">
+                <visual name="visual">
+                <geometry>
+                    <box>
+                    <size>6 0.1 2</size>
+                    </box>
+                </geometry>
+                <material>
+                    <ambient>1 1 0 0</ambient>
+                </material>
+                </visual>
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>6 0.1 2</size>
+                        </box>
+                    </geometry>
+                </collision>
+            </link>
+        </model>
+
+        <model name="wall_left">
+            <pose>-3 0 1 0 0 0</pose>
+            <static>true</static>
+            <link name="link">
+                <visual name="visual">
+                <geometry>
+                    <box>
+                        <size>0.1 6 2</size>
+                    </box>
+                </geometry>
+                <material>
+                    <ambient>1 1 0 0</ambient>
+                </material>
+                </visual>
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>0.1 6 2</size>
+                        </box>
+                    </geometry>
+                </collision>
+            </link>
+        </model>
+
+        <model name="wall_right">
+            <pose>3 0 1 0 0 0</pose>
+            <static>true</static>
+            <link name="link">
+                <visual name="visual">
+                <geometry>
+                    <box>
+                        <size>0.1 6 2</size>
+                    </box>
+                </geometry>
+                <material>
+                    <ambient>1 1 0 0</ambient>
+                </material>
+                </visual>
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>0.1 6 2</size>
+                        </box>
+                    </geometry>
+                </collision>
+            </link>
+        </model>
+
+        <!-- Obstacle 2 -->
+        <model name="obstacle_2">
+            <pose>-1 -1 0.5 0 0 0</pose>
+            <static>true</static>
+            <link name="link">
+                <visual name="visual">
+                <geometry>
+                    <cylinder>
+                    <radius>0.3</radius>
+                    <length>1.0</length>
+                 </cylinder>
+                </geometry>
+                <material>
+                    <ambient>0 1 0 1</ambient>
+                </material>
+                </visual>
+                <collision name="collision">
+                    <geometry>
+                        <cylinder>
+                            <radius>0.3</radius>
+                            <length>1.0</length>
+                        </cylinder>
+                    </geometry>
+                </collision>
+            </link>
+        </model>
+
+        <!-- Obstacle 3 -->
+        <model name="obstacle_3">
+            <pose>2 -1 0.4 0 0 0</pose>
+            <static>true</static>
+            <link name="link">
+                <visual name="visual">
+                <geometry>
+                    <sphere>
+                        <radius>0.4</radius>
+                    </sphere>
+                </geometry>
+                <material>
+                    <ambient>0 0 1 1</ambient>
+                </material>
+                </visual>
+                <collision name="collision">
+                    <geometry>
+                        <sphere>
+                            <radius>0.4</radius>
+                        </sphere>
+                    </geometry>
+                </collision>
+            </link>
+            </model>
+
+        <!-- Obstacle 4 -->
+        <model name="obstacle_4">
+            <pose>-2 1 0.25 0 0 0</pose>
+            <static>true</static>
+            <link name="link">
+                <visual name="visual">
+                <geometry>
+                    <box>
+                        <size>1.0 0.2 0.5</size>
+                    </box>
+                </geometry>
+                <material>
+                    <ambient>1 1 0 1</ambient>
+                </material>
+                </visual>
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>1.0 0.2 0.5</size>
+                        </box>
+                    </geometry>
+                </collision>
+            </link>
+        </model>
+    </world>
+    
+</sdf>
