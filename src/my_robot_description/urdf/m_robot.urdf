@@ -287,7 +287,7 @@
       <odometry_topic>odom</odometry_topic>
       <robot_base_frame>base_footprint</robot_base_frame>
       <publish_odom>true</publish_odom>
-      <publish_odom_tf>false</publish_odom_tf>    <!-- fix: EKF macht TF! -->
+      <publish_odom_tf>true</publish_odom_tf>    <!-- fix: EKF macht TF! -->
     </plugin>
   </gazebo>
 
@@ -297,7 +297,7 @@
       <ros>
         <remapping>~/out:=/joint_states</remapping>
       </ros>
-      <update_rate>10</update_rate>
+      <update_rate>50</update_rate>
       <joint_name>rear_left_wheel_joint</joint_name>
       <joint_name>rear_right_wheel_joint</joint_name>
     </plugin>

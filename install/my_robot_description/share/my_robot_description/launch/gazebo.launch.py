@@ -43,7 +43,7 @@ def generate_launch_description():
         parameters=[robot_description, sim_time_param , {'publish_frequency': 10.0}]
     )
 
-    #, {'publish_frequency': 10.0}
+
     spawn_entity = Node(
         package='gazebo_ros',
         executable='spawn_entity.py',
