@@ -190,6 +190,8 @@
           <stddev>0.01</stddev>
         </noise>
       </ray>
+      <always_on>true</always_on>
+      <visualize>true</visualize>
       <plugin filename="libgazebo_ros_ray_sensor.so" name="lidar_plugin">
         <ros>
           <namespace>/</namespace>

@@ -45,7 +45,7 @@ bt_navigator:
     transform_tolerance: 1.0
     global_frame: map
     robot_base_frame: base_footprint
-    odom_topic: /odometry/filtered    # ← EKF!
+    odom_topic: /odometry/filtered    # EKF!
     bt_loop_duration: 100
     default_server_timeout: 20
     wait_for_service_timeout: 1000
@@ -121,14 +121,14 @@ controller_server:
 
     progress_checker:
       plugin: nav2_controller::SimpleProgressChecker
-      required_movement_radius: 0.3    # ← reduziert
+      required_movement_radius: 0.3    
       movement_time_allowance: 10.0
 
     general_goal_checker:
       stateful: true
       plugin: nav2_controller::SimpleGoalChecker
-      xy_goal_tolerance: 0.35          # ← großzügiger
-      yaw_goal_tolerance: 0.5          # ← großzügiger
+      xy_goal_tolerance: 0.35        
+      yaw_goal_tolerance: 0.5          
 
     FollowPath:
       plugin: nav2_regulated_pure_pursuit_controller::RegulatedPurePursuitController
@@ -296,7 +296,7 @@ waypoint_follower:
     wait_at_waypoint:
       plugin: nav2_waypoint_follower::WaitAtWaypoint
       enabled: true
-      waypoint_pause_duration: 0       # ← kein unnötiges Warten
+      waypoint_pause_duration: 0      
 
 velocity_smoother:
   ros__parameters:
@@ -304,11 +304,11 @@ velocity_smoother:
     smoothing_frequency: 20.0
     scale_velocities: false
     feedback: OPEN_LOOP
-    max_velocity: [0.3, 0.0, 1.0]     # ← konsistent mit controller
+    max_velocity: [0.3, 0.0, 1.0]    
     min_velocity: [-0.3, 0.0, -1.0]
     max_accel: [2.5, 0.0, 3.2]
     max_decel: [-2.5, 0.0, -3.2]
-    odom_topic: odometry/filtered      # ← EKF!
+    odom_topic: odometry/filtered      # EKF!
     odom_duration: 0.1
     deadband_velocity: [0.0, 0.0, 0.0]
     velocity_timeout: 1.0

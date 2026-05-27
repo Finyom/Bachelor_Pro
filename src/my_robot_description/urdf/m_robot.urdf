@@ -104,13 +104,13 @@
   </joint>
 
   <gazebo reference="rear_left_wheel">
-    <mu1>1.0</mu1>
-    <mu2>1.0</mu2>
+    <mu1>4.0</mu1>
+    <mu2>4.0</mu2>
   </gazebo>
 
   <gazebo reference="rear_right_wheel">
-    <mu1>1.0</mu1>
-    <mu2>1.0</mu2>
+    <mu1>4.0</mu1>
+    <mu2>4.0</mu2>
   </gazebo>
 
 
@@ -190,6 +190,8 @@
           <stddev>0.01</stddev>
         </noise>
       </ray>
+      <always_on>true</always_on>
+      <visualize>true</visualize>
       <plugin filename="libgazebo_ros_ray_sensor.so" name="lidar_plugin">
         <ros>
           <namespace>/</namespace>
@@ -262,14 +264,14 @@
           <remapping>~/depth/image_raw:=/camera/depth/image_raw</remapping>
           <remapping>~/points:=/camera/points</remapping>
         </ros>
-        <frame_name>camera_optical_link</frame_name>  <!-- ← optical frame! -->
+        <frame_name>camera_optical_link</frame_name>  
         <min_depth>0.1</min_depth>
         <max_depth>10.0</max_depth>
       </plugin>
     </sensor>
   </gazebo>
 
-  <!-- *************** DIFF-DRIVE (KOMPLETT!) *************** -->
+  <!-- *********** DIFF-DRIVE (KOMPLETT!) ********** -->
   <gazebo>
     <plugin name="diff_drive_base_controller" filename="libgazebo_ros_diff_drive.so">
       <ros>
@@ -278,14 +280,14 @@
       <left_joint>rear_right_wheel_joint </left_joint>
       <right_joint>rear_left_wheel_joint</right_joint>
       <wheel_separation>0.34</wheel_separation>
-      <wheel_diameter>0.1</wheel_diameter>        <!-- ← fix: Durchmesser! -->
+      <wheel_diameter>0.1</wheel_diameter>       
       <max_wheel_torque>30</max_wheel_torque>
       <max_wheel_acceleration>5</max_wheel_acceleration>
       <command_topic>/cmd_vel</command_topic>
       <odometry_topic>odom</odometry_topic>
       <robot_base_frame>base_footprint</robot_base_frame>
       <publish_odom>true</publish_odom>
-      <publish_odom_tf>true</publish_odom_tf>    <!-- ← fix: EKF macht TF! -->
+      <publish_odom_tf>false</publish_odom_tf>    <!-- fix: EKF macht TF! -->
     </plugin>
   </gazebo>
 
