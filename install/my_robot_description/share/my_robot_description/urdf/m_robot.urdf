@@ -176,7 +176,7 @@
             <samples>360</samples>
             <resolution>1</resolution>
             <min_angle>-3.14</min_angle>
-            <max_angle>3.14</max_angle>
+            <max_angle>3.14</max_angle> <!-- 1.5708 -->
           </horizontal>
         </scan>
         <range>
@@ -242,6 +242,48 @@
     <origin xyz="0 0 0" rpy="-1.5708 0 -1.5708"/>
   </joint>
 
+  <link name="imu_link">
+    <inertial>
+      <mass value="0.1" />
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01" />
+    </inertial>
+  </link>
+
+  <joint name="imu_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="imu_link"/>
+    <origin xyz="0 0 0.05" rpy="0 0 0"/>
+  </joint>
+
+  <gazebo reference="imu_link">
+    <sensor name="imu_sensor" type="imu">
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+
+      <imu>
+        <angular_velocity>
+          <x/>
+          <y/>
+          <z/>
+        </angular_velocity>
+
+        <linear_acceleration>
+          <x/>
+          <y/>
+          <z/>
+        </linear_acceleration>
+      </imu>
+
+      <plugin name="imu_plugin" filename="libgazebo_ros_imu_sensor.so">
+        <ros>
+          <remapping>~/out:=/imu/data</remapping>
+        </ros>
+
+        <frame_name>imu_link</frame_name>
+      </plugin>
+    </sensor>
+  </gazebo>
+
   <!-- Gazebo Depth Camera Plugin -->
   <gazebo reference="camera_link">
     <sensor type="depth" name="depth_camera">
@@ -271,7 +313,7 @@
     </sensor>
   </gazebo>
 
-  <!-- *********** DIFF-DRIVE (KOMPLETT!) ********** -->
+  <!--  DIFF-DRIVE (KOMPLETT!) -->
   <gazebo>
     <plugin name="diff_drive_base_controller" filename="libgazebo_ros_diff_drive.so">
       <ros>
@@ -287,7 +329,7 @@
       <odometry_topic>odom</odometry_topic>
       <robot_base_frame>base_footprint</robot_base_frame>
       <publish_odom>true</publish_odom>
-      <publish_odom_tf>true</publish_odom_tf>    <!-- fix: EKF macht TF! -->
+      <publish_odom_tf>true</publish_odom_tf>    <!-- EKF macht TF! -->
     </plugin>
   </gazebo>
 
