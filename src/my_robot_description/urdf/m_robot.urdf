@@ -171,13 +171,13 @@
     
       <update_rate>10</update_rate>
       <ray>
-        <scan>
+        <scan><!--
           <horizontal>
             <samples>360</samples>
             <resolution>1</resolution>
             <min_angle>-3.14</min_angle>
-            <max_angle>3.14</max_angle> <!-- 1.5708 -->
-          </horizontal>
+            <max_angle>3.14</max_angle>  1.5708 
+          </horizontal> -->
         </scan>
         <range>
           <resolution>1</resolution>
