@@ -237,14 +237,14 @@ map_saver:
 
 planner_server:
   ros__parameters:
-    expected_planner_frequency: 5.0  
+    expected_planner_frequency: 5.0
     use_sim_time: true
     transform_tolerance: 1.0
     planner_plugins: ["GridBased"]
     GridBased:
-      plugin: nav2_navfn_planner/NavfnPlanner
+      plugin: "nav2_navfn_planner/NavfnPlanner"
       tolerance: 0.5
-      use_astar: false
+      use_astar: true
       allow_unknown: true
 
 smoother_server:
